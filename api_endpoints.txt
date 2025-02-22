@@ -1,0 +1,11 @@
+# Authentication (Admin)
+POST    /api/auth/signup           - Register a new admin
+POST    /api/auth/login            - Login an admin
+
+# Menu Management
+POST    /api/menu                  - Add a new menu item (Admin only)
+GET     /api/menu                  - Get all menu items
+GET     /api/menu/:id              - Get a specific menu item
+
+# QR Code Generation
+GET     /api/qrcode/:menuId        - Generate a QR code for a menu
