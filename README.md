@@ -30,18 +30,18 @@ This is a **backend API** for a hotel menu system where:
 
 ## 🛠 Installation & Setup
 
-### 1⃣ Clone the Repository
+### 1 Clone the Repository
 ```sh
 git clone https://github.com/AbrishDev/qr-menu-backend.git
 cd hotel-menu-backend
 ```
 
-### 2⃣ Install Dependencies
+### 2 Install Dependencies
 ```sh
 npm install
 ```
 
-### 3⃣ Configure Environment Variables
+### 3 Configure Environment Variables
 Create a `.env` file and add:
 ```
 PORT=5000
@@ -49,7 +49,7 @@ MONGO_URI=mongodb://localhost:27017/Hotel
 JWT_SECRET=HelloWorld
 ```
 
-### 4⃣ Run the Server
+### 4 Run the Server
 ```sh
 npm start
 ```
