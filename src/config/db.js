@@ -13,5 +13,7 @@ const connectDB = async () => {
         process.exit(1);
     }
 };
-
+afterAll(async () => {
+    await mongoose.connection.close(); // ✅ Close DB connection after all tests
+  });
 module.exports = connectDB;
