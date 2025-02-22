@@ -1,8 +1,6 @@
-
-```md
 # 📌 QR Code-Based Hotel Menu System
 
-## 🏨 Overview
+## 🏠 Overview
 This is a **backend API** for a hotel menu system where:
 - **Admins** can log in and manage menu items.
 - **Customers** can scan a **QR code** to view the menu.
@@ -16,7 +14,7 @@ This is a **backend API** for a hotel menu system where:
 
 ## 📂 Project Structure
 ```
-/qr-menu-backend
+/hotel-menu-backend
 │── /src
 │   ├── /controllers       # Handles request logic
 │   ├── /models            # Defines MongoDB schemas
@@ -32,18 +30,18 @@ This is a **backend API** for a hotel menu system where:
 
 ## 🛠 Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 1⃣ Clone the Repository
 ```sh
 git clone https://github.com/AbrishDev/qr-menu-backend.git
 cd hotel-menu-backend
 ```
 
-### 2️⃣ Install Dependencies
+### 2⃣ Install Dependencies
 ```sh
 npm install
 ```
 
-### 3️⃣ Configure Environment Variables
+### 3⃣ Configure Environment Variables
 Create a `.env` file and add:
 ```
 PORT=5000
@@ -51,7 +49,7 @@ MONGO_URI=mongodb://localhost:27017/Hotel
 JWT_SECRET=HelloWorld
 ```
 
-### 4️⃣ Run the Server
+### 4⃣ Run the Server
 ```sh
 npm start
 ```
@@ -59,9 +57,9 @@ Server will run at: **`http://localhost:5000`** 🚀
 
 ---
 
-## 📡 API Endpoints
+## 💼 API Endpoints
 
-### 🔐 Authentication (Admin)
+### 🔒 Authentication (Admin)
 | Method | Endpoint          | Description             |
 |--------|------------------|-------------------------|
 | POST   | `/api/auth/signup`  | Register a new admin   |
@@ -103,4 +101,4 @@ Server will run at: **`http://localhost:5000`** 🚀
 
 ## 📝 License
 This project is **MIT Licensed**.
-```
+
