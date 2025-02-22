@@ -1,7 +1,8 @@
-const QRCode = require('qrcode');
+const QRCode = require("qrcode");
 
-const generateQRCode = async (menuId) => {
-    return await QRCode.toDataURL(`https://yourwebsite.com/menu/${menuId}`);
+const generateQRCode = async () => {
+    const menuUrl = `${process.env.CLIENT_URL}/menu`; // Full menu URL
+    return await QRCode.toDataURL(menuUrl);
 };
 
 module.exports = { generateQRCode };
