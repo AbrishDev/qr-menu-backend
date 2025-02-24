@@ -33,7 +33,7 @@ This is a **backend API** for a hotel menu system where:
 ### 1 Clone the Repository
 ```sh
 git clone https://github.com/AbrishDev/qr-menu-backend.git
-cd hotel-menu-backend
+cd qr-menu-backend
 ```
 
 ### 2 Install Dependencies
