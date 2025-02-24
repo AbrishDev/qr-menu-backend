@@ -3,8 +3,12 @@ const Menu = require('../models/Menu');
 // ✅ Get All Menu Items
 exports.getMenu = async (req, res) => {
     try {
-        const menu = await Menu.find();
-        res.json(menu);
+       const menu = await Menu.find();
+        const formattedMenu = menu.map(item => ({
+            ...item._doc, 
+            price: `ETB ${item.price}` // Add currency format
+        }));
+        res.json(formattedMenu);
     } catch (error) {
         res.status(500).json({ message: "Server Error" });
     }
